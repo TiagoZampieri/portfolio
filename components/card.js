@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { PlusIcon } from '@heroicons/react/24/solid';
 
 export default function Card(props) {
-  const cardColor = props.bgColor ?? 'gray-300';
+  const cardColor = props.bgColor ? props.bgColor : 'gray-300';
   return (
     <a
       className={`w-12/12 aspect-square
