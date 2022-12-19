@@ -6,7 +6,7 @@ export default function Hero() {
       <Image
         alt="Tiago Zampieri"
         className="rounded-full"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/IMG_4585-quadrado.jpg?alt=media&token=f6f20d8c-ce85-4017-9b75-6f3fecb5cfd2"
         width={150}
         height={150}
         style={{ height: '150px' }}

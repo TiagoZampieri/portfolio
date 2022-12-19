@@ -3,6 +3,7 @@
 @tailwind utilities;
 html,
 body {
+  scroll-begavior: smooth;
   padding: 0;
   margin: 0;
   font-family: Roboto;
@@ -26,6 +27,8 @@ a {
   width: 4px;
   height: 80%;
   background: #ccc;
+  opacity: 0.2;
+  border-radius: 0 0 50% 50%;
   position: absolute;
   display: inline-block;
   left: 0;

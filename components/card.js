@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { PlusIcon } from '@heroicons/react/24/solid';
 
 export default function Card(props) {
-  const cardColor = props.bgColor ? props.bgColor : 'gray-300';
+  const cardColor = props.bgColor ?? 'gray-200';
   return (
     <a
       className={`w-12/12 aspect-square
-      bg-${cardColor} rounded-xl 
+      bg-${cardColor} rounded-xl
       flex justify-center items-center 
       shadow-lg 
       hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 

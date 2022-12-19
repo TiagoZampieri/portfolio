@@ -1,13 +1,13 @@
-import Image from 'next/image';
 import Timeline from './timeline';
 
 export default function Experiences() {
   return (
-    <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-12">
-      <h2 className="text-center text-4xl font-bold mb-8">Empresas</h2>
+    <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-40">
+      <h2 className="text-center text-4xl font-bold mb-8">Experiências</h2>
       <div className="w-8/12">
         <div className="timeline">
           <Timeline
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/mobi7-logo.png?alt=media&token=b1730fe9-d3db-416f-a1e9-c21bba0c4af9"
             companyName="Mobi7"
             startDate="agosto de 2022"
             description="Empresa focada em telemetria para frotas de veículos leves. Com pouco tempo de existência foi comprada pela Localiza,
@@ -16,6 +16,7 @@ export default function Experiences() {
              backlog para medir os esforços a ser empreendidos, e também participar das cerimônias do scrum."
           />
           <Timeline
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/ntt-data-logo.jpg?alt=media&token=1ccae1c9-c310-4a80-adc0-3f8326f472ef"
             companyName="NTT Data"
             startDate="junho de 2021"
             endDate="julho de 2022"
@@ -26,6 +27,7 @@ export default function Experiences() {
             e mentoria de tecnologias do dia a dia."
           />
           <Timeline
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/leadlovers-logo.png?alt=media&token=d66683d5-13ce-4297-9502-2badf126c67f"
             companyName="Leadlovers"
             startDate="setembto de 2019"
             endDate="maio de 2021"
