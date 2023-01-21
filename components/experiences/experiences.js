@@ -6,7 +6,7 @@ export default function Experiences() {
   return (
     <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-32">
       <h2 className="text-center text-4xl font-bold mb-8">Experiências</h2>
-      <div className="w-8/12">
+      <div className="md:w-8/12 w-10/12">
         <div className="timeline">
           <Timeline
             logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/mobi7-logo.png?alt=media&token=b1730fe9-d3db-416f-a1e9-c21bba0c4af9"

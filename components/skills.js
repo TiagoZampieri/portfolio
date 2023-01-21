@@ -36,8 +36,8 @@ export default function Skills() {
   return (
     <section className="container mx-auto flex items-center flex-col py-10">
       <h2 className="text-center text-4xl font-bold mb-8">Hard skills</h2>
-      <div className="w-8/12 grid grid-cols-2 gap-8">
-        <div className="hide grid gap-4 grid-cols-2 grid-rows-2">
+      <div className="md:w-8/12 w-10/12 grid md:grid-cols-2 gap-8">
+        <div className="hide grid gap-4 grid-cols-2 md:grid-rows-2">
           <div
             onClick={() => setSkill(skills[0])}
             className={`w-12/12 h-48 

@@ -2,7 +2,7 @@ import Card from './card';
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto flex justify-between items-center py-10">
+    <footer className="container mx-auto flex justify-between items-center py-10 max-sm:px-4">
       <p>tzampieri7@gmail.com</p>
       <div className="grid grid-cols-3 gap-2">
         <div className="w-10 h-10">

@@ -7,7 +7,7 @@ export default function About() {
       className={`${styles.aboutBox} container mx-auto flex flex-col items-center justify-center py-42`}
       id="about"
     >
-      <div className="md:w-4/12 w-8/12 hide about-section">
+      <div className="md:w-4/12 w-10/12 hide about-section">
         <h2 className="text-center text-4xl font-bold mb-8">Sobre</h2>
         <p className="mb-4">
           Oi, eu sou o Tiago. Casado com a Letycia, sonho em ter meu próprio
@@ -24,6 +24,8 @@ export default function About() {
       </div>
       <a
         href="https://wa.me/5541991896052?text=Fala,%20Tiago"
+        target="_blank"
+        rel="noreferrer"
         className={`${styles.linkButton}
         rounded-full text-1xl bg-blue text-base px-6 py-3 mt-8 inline-block shadow-sm`}
       >
