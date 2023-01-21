@@ -36,12 +36,31 @@ a {
   margin: 0 auto;
 }
 
+.hide {
+  opacity: 0;
+  transform: translateX(-80%);
+}
+
+.show-in {
+  transition: ease 1s;
+  opacity: 1;
+  transform: tranlateX(0);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-  body {
-    color: white;
-    background: black;
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    color: #222;
+  }
+
+  button span,
+  a span {
+    color: #fff;
   }
 }

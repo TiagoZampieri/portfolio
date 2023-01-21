@@ -6,7 +6,7 @@ export default function Timeline(props) {
       <div className="col-span-3"></div>
       <div className="item-photo relative col-span-1">
         <Image
-          className="rounded-full h-20 w-20 mx-auto"
+          className="rounded-full hide h-20 w-20 mx-auto"
           src={
             props.logo ??
             'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
@@ -20,7 +20,7 @@ export default function Timeline(props) {
         <div className="my-6">
           <h3 className="text-2xl">{props.companyName}</h3>
           <span>
-            <small className="text-sm text-slate-300">
+            <small className="text-sm text-slate-600">
               {props.startDate} - {props.endDate ?? 'o momento'}
             </small>
           </span>

@@ -1,11 +1,13 @@
+import { ChatBubbleOvalLeftIcon } from '@heroicons/react/24/outline';
 import styles from './about.module.scss';
 
 export default function About() {
   return (
     <section
-      className={`${styles.aboutBox} container min-h-screen mx-auto flex flex-col items-center justify-center py-10`}
+      className={`${styles.aboutBox} container mx-auto flex flex-col items-center justify-center py-42`}
+      id="about"
     >
-      <div className="md:w-4/12 w-8/12  about-section">
+      <div className="md:w-4/12 w-8/12 hide about-section">
         <h2 className="text-center text-4xl font-bold mb-8">Sobre</h2>
         <p className="mb-4">
           Oi, eu sou o Tiago. Casado com a Letycia, sonho em ter meu próprio
@@ -21,21 +23,12 @@ export default function About() {
         <p>Bora trocar uma ideia?</p>
       </div>
       <a
-        className={`${styles.buttonCta}
-        inline-block relative
-        rounded-full 
-        bg-blue 
-        text-base 
-        px-8 py-4 mt-8 
-        shadow-md 
-        shadow-white/5
-        transition ease-in-out delay-100 
-        hover:scale-110 hover:duration-500`}
         href="https://wa.me/5541991896052?text=Fala,%20Tiago"
-        target="_blank"
-        rel="noreferrer"
+        className={`${styles.linkButton}
+        rounded-full text-1xl bg-blue text-base px-6 py-3 mt-8 inline-block shadow-sm`}
       >
-        Entrar em contato
+        <span>Entrar em contato</span>
+        <ChatBubbleOvalLeftIcon className={styles.externalLinkIcon} />
       </a>
     </section>
   );

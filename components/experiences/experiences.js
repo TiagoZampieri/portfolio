@@ -1,8 +1,10 @@
-import Timeline from './timeline';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
+import Timeline from '../timeline';
+import styles from './experiences.module.scss';
 
 export default function Experiences() {
   return (
-    <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-40">
+    <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-32">
       <h2 className="text-center text-4xl font-bold mb-8">Experiências</h2>
       <div className="w-8/12">
         <div className="timeline">
@@ -39,12 +41,22 @@ export default function Experiences() {
         </div>
       </div>
       <a
-        className="rounded-full bg-blue text-base px-8 py-4 mt-8 inline-block shadow-md shadow-white/5"
+        className={`${styles.linkButton}
+          rounded-full 
+          bg-blue 
+          text-base 
+          px-8 
+          py-4 
+          mt-8 
+          inline-block 
+          shadow-md 
+          shadow-white/5`}
         href="https://www.linkedin.com/in/tzampieri/"
         target="_blank"
         rel="noreferrer"
       >
-        Ver mais
+        <span>Ver mais</span>
+        <ArrowTopRightOnSquareIcon className={styles.externalLinkIcon} />
       </a>
     </section>
   );
