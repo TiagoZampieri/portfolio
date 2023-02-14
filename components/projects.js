@@ -6,7 +6,7 @@ export default function Projects() {
       <h2 className="text-center text-4xl font-bold mb-8">Projetos</h2>
       <div className="grid gap-4 md:grid-cols-4 grid-cols-1 w-8/12">
         <Card image="/img/YouTube-logo.png" bgColor="white" link="#"></Card>
-        <Card image="/img/dzamp-logo.png" bgColor="black" link="#"></Card>
+        <Card image="/img/dzamp-logo.png" bgColor="customBlack" link="#"></Card>
         <Card></Card>
         <Card></Card>
       </div>

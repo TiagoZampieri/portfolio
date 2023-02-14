@@ -4,8 +4,7 @@ import { PlusIcon } from '@heroicons/react/24/solid';
 export default function Card(props) {
   return (
     <a
-      className={`w-12/12 hide aspect-square
-      bg-${props.bgColor ?? 'gray-300'} rounded-xl
+      className={`w-12/12 hide aspect-square bg-gray-200 rounded-xl
       flex justify-center items-center 
       shadow-lg 
       hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 
