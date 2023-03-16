@@ -18,7 +18,7 @@ export default function Hero() {
         style={{ height: '150px' }}
       />
       <h1 className="text-5xl font-bold mt-8 mb-4">Tiago Zampieri</h1>
-      <span>Front-end - Wordpress - Mobile</span>
+      <span>Webdesign - Wordpress - Front-end</span>
       <button
         className={`${styles.linkButton}
         rounded-full text-1xl bg-blue text-base px-6 py-3 mt-8 inline-block shadow-sm`}
