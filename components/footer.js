@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className="w-10 h-10">
           <Card
-            link="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/github-logo.png?alt=media&token=6033b685-2d23-4b18-a169-8c8768ea7977"
+            link="https://github.com/TiagoZampieri"
             image="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/github-logo.png?alt=media&token=6033b685-2d23-4b18-a169-8c8768ea7977"
           />
         </div>
