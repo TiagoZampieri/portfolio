@@ -8,19 +8,19 @@ export default function Footer() {
         <div className="w-10 h-10">
           <Card
             link="https://www.linkedin.com/in/tzampieri/"
-            image="/img/linkedin-logo.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/linkedin-logo.png?alt=media&token=7b5d7858-da6f-47db-8d37-c033a47fba1c"
           />
         </div>
         <div className="w-10 h-10">
           <Card
             link="https://medium.com/@tiagozampieri"
-            image="/img/medium-logo.png"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/medium-logo.png?alt=media&token=de51dc9f-939d-4c58-8ba0-8a1becc34fa2"
           />
         </div>
         <div className="w-10 h-10">
           <Card
-            link="https://github.com/TiagoZampieri"
-            image="/img/github-logo.png"
+            link="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/github-logo.png?alt=media&token=6033b685-2d23-4b18-a169-8c8768ea7977"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/github-logo.png?alt=media&token=6033b685-2d23-4b18-a169-8c8768ea7977"
           />
         </div>
       </div>

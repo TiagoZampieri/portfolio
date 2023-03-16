@@ -9,7 +9,7 @@ export default function Experiences() {
       <div className="md:w-8/12 w-10/12">
         <div className="timeline">
           <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/mobi7-logo.png?alt=media&token=b1730fe9-d3db-416f-a1e9-c21bba0c4af9"
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/mobi7-logo.png?alt=media&token=99c1c6d7-6e13-4fda-a5d9-773e0dcefb20"
             companyName="Mobi7"
             startDate="agosto de 2022"
             description="Empresa focada em telemetria para frotas de veículos leves. Com pouco tempo de existência foi comprada pela Localiza,
@@ -18,7 +18,7 @@ export default function Experiences() {
              backlog para medir os esforços a ser empreendidos, e também participar das cerimônias do scrum."
           />
           <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/ntt-data-logo.jpg?alt=media&token=1ccae1c9-c310-4a80-adc0-3f8326f472ef"
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/ntt-data-logo.jpg?alt=media&token=05b2972d-27ce-4c95-883c-da9e24de1971"
             companyName="NTT Data"
             startDate="junho de 2021"
             endDate="julho de 2022"
@@ -29,7 +29,7 @@ export default function Experiences() {
             e mentoria de tecnologias do dia a dia."
           />
           <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/leadlovers-logo.png?alt=media&token=d66683d5-13ce-4297-9502-2badf126c67f"
+            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/leadlovers-logo.png?alt=media&token=cc778606-1b8b-401d-91fe-912696c2dcb8"
             companyName="Leadlovers"
             startDate="setembto de 2019"
             endDate="maio de 2021"

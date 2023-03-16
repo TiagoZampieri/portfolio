@@ -12,7 +12,7 @@ export default function Hero() {
       <Image
         alt="Tiago Zampieri"
         className="rounded-full"
-        src="https://firebasestorage.googleapis.com/v0/b/portfolio-3948a.appspot.com/o/IMG_4585-quadrado.jpg?alt=media&token=f6f20d8c-ce85-4017-9b75-6f3fecb5cfd2"
+        src="/img/foto-perfil.jpg"
         width={150}
         height={150}
         style={{ height: '150px' }}

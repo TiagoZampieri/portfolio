@@ -50,10 +50,10 @@ export default function Skills() {
             }`}
           >
             <Image
-              src="/img/angular-logo.png"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/angular-logo.png?alt=media&token=acd95b43-d85f-4c84-9796-5a1e950187ad"
               width="150"
               height="150"
-              alt="skill"
+              alt="Logo Angular"
             />
           </div>
           <div
@@ -68,10 +68,10 @@ export default function Skills() {
             onClick={() => setSkill(skills[1])}
           >
             <Image
-              src="/img/next-logo.png"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/next-logo.png?alt=media&token=ee2474aa-0aec-41f5-9987-be5ba7c3789d"
               width="150"
               height="150"
-              alt="skill"
+              alt="Logo NextJS"
             />
           </div>
           <div
@@ -86,10 +86,10 @@ export default function Skills() {
             onClick={() => setSkill(skills[2])}
           >
             <Image
-              src="/img/wordpress-logo.png"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/wordpress-logo.png?alt=media&token=5538d56e-db6b-4fa5-a1b4-5c8e47c99942"
               width="150"
               height="150"
-              alt="skill"
+              alt="Logo Wordpress"
             />
           </div>
           <div
@@ -104,10 +104,10 @@ export default function Skills() {
             onClick={() => setSkill(skills[3])}
           >
             <Image
-              src="/img/node-logo.png"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/node-logo.png?alt=media&token=da71fe1c-dad6-4f0f-b933-c7751f3d971a"
               width="150"
               height="150"
-              alt="skill"
+              alt="Logo NodeJS"
             />
           </div>
         </div>
