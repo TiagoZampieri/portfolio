@@ -28,7 +28,7 @@ export default function Home() {
     <div className="bg-customWhite">
       <Head>
         <title>Tiago Zampieri</title>
-        <meta property="og: title" content="Tiago Zampieri" />
+        <meta property="og:title" content="Tiago Zampieri" />
         <meta property="og:description" content="Front-end - Webdesign" />
         <meta property="og:url" content="https://tiagozampieri.com" />
         <meta property="og:image" content="/img/foto-perfil.jpg" />
