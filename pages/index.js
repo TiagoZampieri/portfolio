@@ -28,12 +28,10 @@ export default function Home() {
     <div className="bg-customWhite">
       <Head>
         <title>Tiago Zampieri</title>
+        <meta property="og: title" content="Tiago Zampieri" />
         <meta property="og:description" content="Front-end - Webdesign" />
         <meta property="og:url" content="https://tiagozampieri.com" />
-        <meta
-          property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/foto-perfil.jpg?alt=media&token=8a98fc9e-29de-4eb5-b25e-937354e25102"
-        />
+        <meta property="og:image" content="/img/foto-perfil.jpg" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
