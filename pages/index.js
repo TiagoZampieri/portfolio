@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { useEffect } from 'react';
 import About from '../components/about/about';
 import CallToAction from '../components/call-to-action/call-to-action';
@@ -30,6 +31,19 @@ export default function Home() {
         <meta name="description" content="Front-end - Webdesign" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WS5W3GD80E"
+      />
+      <Script
+        dangerouslySetInnerHtml={{
+          __html: ` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WS5W3GD80E');`,
+        }}
+      />
       <Hero />
       <About />
       <Projects />
