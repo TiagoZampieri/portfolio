@@ -55,7 +55,7 @@ export default function Home() {
         <meta
           name="twitter:image"
           content="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/foto-perfil.jpg?alt=media&token=8a98fc9e-29de-4eb5-b25e-937354e25102"
-        ></meta>
+        />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
