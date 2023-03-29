@@ -28,11 +28,35 @@ export default function Home() {
     <div className="bg-customWhite">
       <Head>
         <title>Tiago Zampieri</title>
-        <meta property="og:title" content="Tiago Zampieri" />
-        <meta property="og:description" content="Front-end - Webdesign" />
-        <meta property="og:url" content="https://tiagozampieri.com" />
-        <meta property="og:image" content="/img/foto-perfil.jpg" />
+        <meta name="description" content="Webdesign - Wordpress - Front-end" />
+
+        {/* Facebook Meta Tags */}
+        <meta property="og:url" content="https://www.tiagozampieri.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content="Tiago Zampieri" />
+        <meta
+          property="og:description"
+          content="Webdesign - Wordpress - Front-end"
+        />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/foto-perfil.jpg?alt=media&token=8a98fc9e-29de-4eb5-b25e-937354e25102"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="tiagozampieri.com" />
+        <meta property="twitter:url" content="https://www.tiagozampieri.com/" />
+        <meta name="twitter:title" content="Tiago Zampieri" />
+        <meta
+          name="twitter:description"
+          content="Webdesign - Wordpress - Front-end"
+        />
+        <meta
+          name="twitter:image"
+          content="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/foto-perfil.jpg?alt=media&token=8a98fc9e-29de-4eb5-b25e-937354e25102"
+        ></meta>
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script
