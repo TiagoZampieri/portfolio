@@ -60,16 +60,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script
-        async
+        strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-WS5W3GD80E"
       />
       <Script
+        id="google-analytics"
+        strategy="afterInteractive"
         dangerouslySetInnerHtml={{
           __html: ` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        gtag('config', 'G-WS5W3GD80E');`,
+        gtag('config', 'G-WS5W3GD80E', {page_path: window.location.patg});`,
         }}
       />
       <Hero />
