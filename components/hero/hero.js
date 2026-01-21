@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
         <h1 className="text-5xl font-bold mb-4 md:text-7xl leading-[1.1] tracking-tighter">Transformando ideias em <span className="text-primary">código</span> de alta performance</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-          Especialista em Angular, Next.js e Node.js focado em entregar soluções escaláveis e de alta performance para o seu negócio através de interfaces intuitivas e robustas.
+          Especialista desenvolvimento de interfaces focado em entregar soluções escaláveis e de alta performance para o seu negócio através de interfaces intuitivas e robustas.
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
           <button className="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform" onClick={gotoAbout}>
