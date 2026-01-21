@@ -1,119 +1,69 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import styles from './skills.module.scss';
 
 export default function Skills() {
-  const skills = [
-    {
-      title: 'Angular',
-      description: `Framework de desenvolvimento web. Foi um dos primeiro frameworks da nova geração.
-       O surgimento dessa ferramenta, juntamente com outras, ajudou a mudar a forma de desenvolver aplicações web. \n\n
-       Trabalho com Angular desde a sua primeira versão, o Angularjs, e desde então acompanho sua evolução. \n\n
-       É a minha principal ferramenta e foco de estudos dos últimos anos.`,
-    },
-    {
-      title: 'Next.js',
-      description: `É um framework de desenvolvimento web baseado em React. Tenho estudado essa ferramenta para diversificar 
-        um pouco mais o conhecimento em desenvolvimento front-end.`,
-    },
-    {
-      title: 'Wordpress',
-      description: `É uma ferramenta de CMS baseada em PHP, está presente em grande parte da internet e é utilizado para criação de sites e blogs. 
-      \r Trabalho com essa ferramenta para criação de sites para clientes, utilizando os diferentes temas e plugins que o ecossistema oferece.`,
-    },
-    {
-      title: 'NodeJs',
-      description: `Software que permite a utilização de Javascript fora de um navegador web. 
-      Ter um conhecimento básico dessa ferramente é importante para o desenvolvimento web, mas também já tive a oportunidade de utiliza-la
-      para desenvolvimento de API's REST.`,
-    },
-  ];
-
-  const [skill = { title, description }, setSkill] = useState(skills[0]);
-
-  const isSelected = (skillTitle) => {
-    return skill.title === skillTitle;
-  };
   return (
-    <section className="container mx-auto flex items-center flex-col py-10">
-      <h2 className="text-center text-4xl font-bold mb-8">Hard skills</h2>
-      <div className="md:w-8/12 w-10/12 grid md:grid-cols-2 gap-8">
-        <div className="hide grid gap-4 grid-cols-2 md:grid-rows-2">
-          <div
-            onClick={() => setSkill(skills[0])}
-            className={`w-12/12 h-48 
-            bg-gray-200 rounded-xl 
-            flex justify-center items-center 
-            shadow-lg 
-            hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 
-            transition ease-in-out delay-100 ${
-              isSelected('Angular') ? 'shadow-2xl scale-110' : null
-            }`}
-          >
+    <section className="space-y-8 py-12" id="skills">
+      <div className="flex flex-col items-center text-center gap-2">
+        <h2 className="text-3xl font-bold tracking-tight">Tech Stack &amp; Skills</h2>
+        <div className="h-1 w-20 bg-primary rounded-full"></div>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className={`${styles.bentoCard} flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark p-8 items-center text-center`}>
+          <div className="size-16 rounded-full bg-pink-500/10 flex items-center justify-center">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/angular-logo.png?alt=media&token=acd95b43-d85f-4c84-9796-5a1e950187ad"
-              width="150"
-              height="150"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/angular_icon_gradient.gif?alt=media&token=ca42a9cf-37db-4c0f-9385-f899de31daaa"
+              width="64"
+              height="64"
               alt="Logo Angular"
             />
           </div>
-          <div
-            className={`w-12/12 h-48 
-            bg-gray-200 rounded-xl 
-            flex justify-center items-center 
-            shadow-lg
-            hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 
-            transition ease-in-out delay-100 ${
-              isSelected('Next.js') ? 'shadow-2xl scale-110' : null
-            }`}
-            onClick={() => setSkill(skills[1])}
-          >
+          <div>
+            <h3 className="font-bold text-xl">Angular</h3>
+            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">Enterprise Apps</p>
+          </div>
+        </div>
+        <div className={`${styles.bentoCard} flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark p-8 items-center text-center`}>
+          <div className="size-16 rounded-full bg-black-500/10 flex items-center justify-center">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/next-logo.png?alt=media&token=ee2474aa-0aec-41f5-9987-be5ba7c3789d"
-              width="150"
-              height="150"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/nextjs-icon-dark-background.png?alt=media&token=4340ec50-0e57-46d4-8916-c779a076cab9"
+              width="64"
+              height="64"
               alt="Logo NextJS"
             />
           </div>
-          <div
-            className={`w-12/12 h-48 
-            bg-gray-200 rounded-xl 
-            flex justify-center items-center 
-            shadow-lg 
-            hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 
-            transition ease-in-out delay-100 ${
-              isSelected('Wordpress') ? 'shadow-2xl scale-110' : null
-            }`}
-            onClick={() => setSkill(skills[2])}
-          >
+          <div>
+            <h3 className="font-bold text-xl">NextJS</h3>
+            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">SSR & SEO</p>
+          </div>
+        </div>
+        <div className={`${styles.bentoCard} flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark p-8 items-center text-center`}>
+          <div className="size-16 rounded-full bg-blue-500/10 flex items-center justify-center">
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/wordpress-logo.png?alt=media&token=5538d56e-db6b-4fa5-a1b4-5c8e47c99942"
-              width="150"
-              height="150"
+              width="64"
+              height="64"
               alt="Logo Wordpress"
             />
           </div>
-          <div
-            className={`w-12/12 h-48 
-            bg-gray-200 rounded-xl 
-            flex justify-center items-center 
-            shadow-lg 
-            hover:shadow-2xl hover:scale-110 hover:duration-500 cursor-pointer 
-            transition ease-in-out delay-100 ${
-              isSelected('NodeJs') ? 'shadow-2xl scale-110' : null
-            }`}
-            onClick={() => setSkill(skills[3])}
-          >
-            <Image
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/node-logo.png?alt=media&token=da71fe1c-dad6-4f0f-b933-c7751f3d971a"
-              width="150"
-              height="150"
-              alt="Logo NodeJS"
-            />
+          <div>
+            <h3 className="font-bold text-xl">Wordpress</h3>
+            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">CMS & Websites</p>
           </div>
         </div>
-        <div>
-          <h3 className="text-2xl font-bold mb-3">{skill.title}</h3>
-          <p>{skill.description}</p>
+        <div className={`${styles.bentoCard} flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark p-8 items-center text-center`}>
+          <div className="size-16 rounded-full bg-green-500/10 flex items-center justify-center">
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/nodejs-icon.png?alt=media&token=b40092ee-a8bb-4d8a-a1a5-44c8bfab53dc"
+              width="64"
+              height="64"
+              alt="Logo Node"
+            />
+          </div>
+          <div>
+            <h3 className="font-bold text-xl">NodeJS</h3>
+            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">Enterprise Apps</p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,63 +1,73 @@
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
-import Timeline from '../timeline';
+import { BriefcaseIcon } from '@heroicons/react/24/outline';
 import styles from './experiences.module.scss';
 
 export default function Experiences() {
   return (
-    <section className="container mx-auto flex flex-col items-center justify-center min-h-screen py-32">
-      <h2 className="text-center text-4xl font-bold mb-8">Experiências</h2>
-      <div className="md:w-8/12 w-10/12">
-        <div className="timeline">
-          <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/mobi7-logo.png?alt=media&token=99c1c6d7-6e13-4fda-a5d9-773e0dcefb20"
-            companyName="Mobi7"
-            startDate="agosto de 2022"
-            description="Empresa focada em telemetria para frotas de veículos leves. Com pouco tempo de existência foi comprada pela Localiza,
-             e ajuda a gerenciar a frota de várias unidades de negócio do grupo. Minha função é desenvolver a plataforma que possibilitam a plataforma
-             a gerenciar suas frotas, trabalhar junto com o time a estimar e realizar refinamentos técnicos das novas features e das atividades em 
-             backlog para medir os esforços a ser empreendidos, e também participar das cerimônias do scrum."
-          />
-          <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/ntt-data-logo.jpg?alt=media&token=05b2972d-27ce-4c95-883c-da9e24de1971"
-            companyName="NTT Data"
-            startDate="junho de 2021"
-            endDate="julho de 2022"
-            description="Uma das maiores empresas de consultoria em tecnologia do mundo. Consultor de desenvolvimento de software para o banco Itaú,
-            um dos maiores do Brasil, meu papel era não só escrever código mas também auxiliar na análise das melhores soluções. Conquistar a confinça do
-            cliente através de qualidade de código e transparência era um dos comportamentos importantes para alcançar os objetivos da empresa. No período em que
-            estive lá, pude contribuir também com o desenvolvimento da carreira de alguns colegas que estvam inicando como desenvolvedores, através do ensino
-            e mentoria de tecnologias do dia a dia."
-          />
-          <Timeline
-            logo="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/leadlovers-logo.png?alt=media&token=cc778606-1b8b-401d-91fe-912696c2dcb8"
-            companyName="Leadlovers"
-            startDate="setembto de 2019"
-            endDate="maio de 2021"
-            description="Empresa focada em autmoação de marketing digital. Tive a oportunidade de crescer profissionalmente nessa empresa, desenvolvendo inúmeras
-            soluções para usuários que queriam fazer as suas ideias crescerem através do marketing digital. As soluções foram de manutenção de construtor de páginas (drag and drop),
-            gerenciador de anúncios online, automatizador de textos para email, gerenciador de ferramenta para criação de curso EAD, entre outras ferramentas. Pude ter contato com
-            linguagens de programação para backend como C# e frameworks front-end como AngularJs e Angular 2+."
-          />
+    <section className="space-y-12 py-12" id="experiences">
+      <div className="flex flex-col items-center text-center gap-2">
+        <h2 className="text-3xl font-bold tracking-tight">Experiências</h2>
+        <div className="h-1 w-20 bg-primary rounded-full"></div>
+      </div>
+      <div className="relative space-y-12 before:absolute before:inset-0 before:ml-5 md:before:mx-auto before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-primary before:via-slate-300 dark:before:via-slate-800 before:to-transparent">
+        <div className={`${styles.experience} relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group`}>
+          <div className={`${styles.experienceIcon} md:absolute flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-background-light dark:bg-background-dark text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}>
+            <BriefcaseIcon className='text-primary w-6'></BriefcaseIcon>
+          </div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 className="font-bold text-xl">Senior Front-end Developer</h3>
+                <p className="text-primary font-medium">Doutor Finanças</p>
+              </div>
+              <time className="px-3 py-1 bg-slate-100 dark:bg-background-dark rounded text-xs font-bold text-slate-500 uppercase tracking-wider">Abr 2025 - o momento</time>
+            </div>
+            <p className='text-slate-600 dark:text-slate-400 text-sm'>
+              Startup baseada em Lisboa-PT, que oferece soluções financeiras para pessoas físicas. Minha função é desenvolver a plataforma web que possibilita aos usuários gerenciar os processos de análise de crédito e dados pessoais. Realizo análise e refinamentos técnicos das novas ações do negócio e de soluções para problemas técnicos e de usabilidade. Também presto manutenção para a o backend da aplicação, escrito em PHP.
+            </p>
+          </div>
+        </div>
+        <div className={`${styles.experience} relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group`}>
+          <div className={`${styles.experienceIcon} md:absolute flex items-center justify-center w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark text-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}>
+            <BriefcaseIcon className='text-slate-400 w-6'></BriefcaseIcon>
+          </div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 className="font-bold text-xl">Front-end Developer</h3>
+                <p className="text-primary font-medium">Mobi7</p>
+              </div>
+              <time className="px-3 py-1 bg-slate-100 dark:bg-background-dark rounded text-xs font-bold text-slate-500 uppercase tracking-wider">Ago 2022 - Mar 2025</time>
+            </div>
+            <p className='text-slate-600 dark:text-slate-400 text-sm'>
+              Empresa focada em telemetria para frotas de veículos leveSs. Com pouco tempo de existência foi comprada pela Localiza, e ajuda a gerenciar a frota de várias unidades de negócio do grupo. Minha função é desenvolver a plataforma que possibilitam a plataforma a gerenciar suas frotas, trabalhar junto com o time a estimar e realizar refinamentos técnicos das novas features e das atividades em backlog para medir os esforços a ser empreendidos, e também participar das cerimônias do scrum.
+            </p>
+          </div>
+        </div>
+        <div className={`${styles.experience} relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group`}>
+          <div className={`${styles.experienceIcon} md:absolute flex items-center justify-center w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark text-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}>
+            <BriefcaseIcon className='text-slate-400 w-6'></BriefcaseIcon>
+          </div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 className="font-bold text-xl">Senior Front-end Developer</h3>
+                <p className="text-primary font-medium">NTT Data</p>
+              </div>
+              <time className="px-3 py-1 bg-slate-100 dark:bg-background-dark rounded text-xs font-bold text-slate-500 uppercase tracking-wider">Jun 2021 - Jul 2022</time>
+            </div>
+            <p className=' text-slate-600 dark:text-slate-400 text-sm'>
+              Consultor de desenvolvimento de software para o banco Itaú, um dos maiores do Brasil, meu papel era não só escrever código mas também auxiliar na análise de soluções. Conquistar a confinça do cliente através da qualidade e a transparência era importante para alcançar os objetivos da empresa. No período em que estive lá, pude contribuir também com o desenvolvimento da carreira de alguns colegas que estvam inicando através do ensino e mentoria de tecnologias.
+            </p>
+          </div>
+        </div>
+        <div className={`${styles.experience} relative flex items-center md:justify-center md:odd:flex-row-reverse group`}>
+          <a className="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform" href="https://www.linkedin.com/in/tzampieri/"
+            target="_blank"
+            rel="noreferrer">
+            <span>Ver mais</span>
+          </a>
         </div>
       </div>
-      <a
-        className={`${styles.linkButton}
-          rounded-full 
-          bg-blue 
-          text-base 
-          px-8 
-          py-4 
-          mt-8 
-          inline-block 
-          shadow-md 
-          shadow-white/5`}
-        href="https://www.linkedin.com/in/tzampieri/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span>Ver mais</span>
-        <ArrowTopRightOnSquareIcon className={styles.externalLinkIcon} />
-      </a>
-    </section>
+    </section >
   );
 }

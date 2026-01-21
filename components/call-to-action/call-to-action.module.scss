@@ -1,22 +1,22 @@
-.externalLinkIcon {
-  display: none;
-  opacity: 0;
-  margin-left: -3px;
-  width: 0px;
-}
+// .externalLinkIcon {
+//   display: none;
+//   opacity: 0;
+//   margin-left: -3px;
+//   width: 0px;
+// }
 
-.linkButton {
-  display: flex;
-}
+// .linkButton {
+//   display: flex;
+// }
 
-.linkButton span {
-  margin-right: 4px;
-}
+// .linkButton span {
+//   margin-right: 4px;
+// }
 
-.linkButton:hover .externalLinkIcon {
-  display: inline-block;
-  animation: showIn 300ms forwards;
-}
+// .linkButton:hover .externalLinkIcon {
+//   display: inline-block;
+//   animation: showIn 300ms forwards;
+// }
 
 @keyframes showIn {
   to {

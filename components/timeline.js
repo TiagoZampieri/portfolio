@@ -3,7 +3,6 @@ import Image from 'next/image';
 export default function Timeline(props) {
   return (
     <div className="timeline-item grid grid-cols-7">
-      {/* <div className="md:col-span-2 max-sm:hidden"></div> */}
       <div className="item-photo relative md:col-span-1 col-span-3">
         <Image
           className="rounded-full hide h-20 w-20 mx-auto"

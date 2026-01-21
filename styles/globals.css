@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   scroll-begavior: smooth;
@@ -51,6 +52,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   h1,
   h2,
   h3,
@@ -59,8 +61,11 @@ a {
     color: #222;
   }
 
-  button span,
-  a span {
-    color: #fff;
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
   }
 }

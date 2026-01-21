@@ -5,8 +5,8 @@ import About from '../components/about/about';
 import CallToAction from '../components/call-to-action/call-to-action';
 import Experiences from '../components/experiences/experiences';
 import Footer from '../components/footer';
+import Header from '../components/header';
 import Hero from '../components/hero/hero';
-import Projects from '../components/projects';
 import Skills from '../components/skills';
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
     });
   });
   return (
-    <div className="bg-customWhite">
+    <>
       <Head>
         <title>Tiago Zampieri</title>
         <meta name="description" content="Webdesign - Wordpress - Front-end" />
@@ -56,7 +56,7 @@ export default function Home() {
           name="twitter:image"
           content="https://firebasestorage.googleapis.com/v0/b/portfolio-ae956.appspot.com/o/foto-perfil.jpg?alt=media&token=8a98fc9e-29de-4eb5-b25e-937354e25102"
         />
-
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script
@@ -73,16 +73,20 @@ export default function Home() {
         gtag('config', 'G-WS5W3GD80E', {page_path: window.location.patg});`,
         }}
       />
-      <Hero />
-      <About />
-      <Projects />
-      <Experiences />
-      <Skills />
-      <CallToAction
-        headline="Precisa de ajuda pra fazer sua ideia sair do papel?"
-        buttonText="Fale comigo"
-      />
-      <Footer />
-    </div>
+      <Header />
+      <div className="bg-customWhite bg-background-light dark:bg-background-dark px-4">
+        <div className='max-w-7xl mx-auto'>
+          <Hero />
+          <About />
+          <Skills />
+          <Experiences />
+          <CallToAction
+            headline="Precisa de ajuda pra fazer sua ideia sair do papel?"
+            description="Estou disponível para novos projetos e parcerias. Vamos conversar!"
+            buttonText="Fale comigo"
+          />
+          <Footer />
+        </div>
+      </div></>
   );
 }

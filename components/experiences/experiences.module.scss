@@ -18,6 +18,24 @@
   animation: showIn 300ms forwards;
 }
 
+
+@media (min-width: 768px) {
+  .experience {
+    &:nth-of-type(odd) {
+      .experienceIcon {
+        left: 50%;
+      }
+    }
+
+    &:nth-of-type(even) {
+      .experienceIcon {
+        right: 50%;
+      }
+    }
+  }
+}
+
+
 @keyframes showIn {
   to {
     opacity: 1;
